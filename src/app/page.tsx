@@ -1,17 +1,12 @@
-import LinkCard from "@/componets/LinkCard";
+import LinkList from "@/componets/LinkList";
 import Profile from "@/componets/Profile";
+import { links } from "@/lib/links";
 
 const profile = {
   name: "김개발",
   bio: "풀스택 개발자 | 요즘에는 AI 개발에 관심이 많아요",
   imageUrl: "https://placehold.co/150x150/orange/white",
 };
-
-const links = [
-  { title: "깃허브", url: "https://github.com/tomaj7-ee", icon: "🐙" },
-  { title: "블로그", url: "https://daum.net", icon: "🖊️" },
-  { title: "이메일", url: "mailto:tomaj7@gmail.com", icon: "📮" },
-];
 
 export default function Home() {
   return (
@@ -21,11 +16,7 @@ export default function Home() {
         bio={profile.bio}
         imageUrl={profile.imageUrl}
       />
-      <section className="mt-12 grid grid-cols-3 gap-4">
-        {links.map((link) => (
-          <LinkCard key={link.title} {...link} />
-        ))}
-      </section>
+      <LinkList links={links} />
     </main>
   );
 }
