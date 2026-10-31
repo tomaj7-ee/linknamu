@@ -1,6 +1,13 @@
 @import "tailwindcss";
 
 body {
-  background: #f4f7f2;
-  color: #1f2a1f;
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  color: #3b2f2a;
+  background-color: #fdf6ec;
+  background-image:
+    radial-gradient(60% 40% at 15% 0%, rgba(255, 214, 186, 0.7), transparent 70%),
+    radial-gradient(50% 35% at 90% 85%, rgba(255, 196, 168, 0.55), transparent 70%),
+    linear-gradient(160deg, #fffaf0 0%, #fdeedd 50%, #fbdcc4 100%);
+  background-attachment: fixed;
 }
